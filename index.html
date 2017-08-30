@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>1</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,700" rel="stylesheet">
+</head>
+
+<body>
+
+	<header>
+		<img class="logo" src="img/logo.png" alt="logo">
+	</header>	
+
+	<main>
+		<div class="container">
+			<div class="register-container">
+				<h2 class="form-header">Register Form</h2>
+				<form>
+					<section class="register">	
+						<div class="input-container">
+							<div class="icon-container"><img src="img/user-icon.png"></div>
+							<input type="text" placeholder="Username">
+						</div>
+						<div class="input-container">
+							<div class="icon-container"><img src="img/padlock-icon.png"></div>
+							<input type="password" placeholder="Password">
+						</div>
+						<div class="input-container">
+							<div class="icon-container"><img src="img/padlock-icon.png"></div>
+							<input type="password" placeholder="Confirm Password">
+						</div>
+						<div class="input-container">
+							<div class="icon-container"><img src="img/envelope-icon.png"></div>
+							<input type="email" placeholder="Email">
+						</div>
+						<div class="input-container">
+							<div class="icon-container"><img src="img/location-icon.png"></div>
+							<select name="location">
+								<option hidden value="your-location">Your Location</option>
+								<option value="warsaw">Warsaw</option>
+								<option value="poznan">Poznań</option>
+								<option value="gdansk">Gdańsk</option>
+								<option value="other">Other</option>
+							</select>
+						</div>
+						<div class="checkbox-container">
+							<input id="checkbox" type="checkbox" value="unchecked"> 
+							<label class="checkbox-label" for="checkbox">I have read and accept terms of use.</label>
+						</div>
+						<button class="button" type="submit">Sign Up</button>						
+					</section>
+				</form>
+			</div>
+			<div class="mail-container">
+				<h2 class="form-header">Send Email</h2>
+				<form>
+					<section class="send-mail">
+						<div class="input-container">
+							<div class="icon-container"><img src="img/user-icon.png"></div>
+							<input type="text" placeholder="Your name">
+						</div>
+						<div class="input-container">
+							<div class="icon-container"><img rc="img/envelope-icon.png"></div>
+							<input type="email" placeholder="Email">
+						</div>
+						<textarea class="text-area" name="message" placeholder="Type your message..."></textarea>
+						<div class="checkbox-container">
+							<input id="checkbox2" type="checkbox" value="unchecked">
+							<label for="checkbox2">Send a copy to my Email</label>
+						</div>
+						<button class="button" type="submit">Send Email</button>
+					</section>
+				</form>	
+			</div>
+		</div>
+		<div class="container">
+			<div class="sign-in-container">
+				<h2 class="form-header">Sign In Form</h2>
+				<form>
+					<section class="sign-in">
+						<div class="input-container">
+							<div class="icon-container"><img src="img/user-icon.png"></div>
+							<input type="text" placeholder="Username">
+						</div>
+						<div class="input-container">
+							<div class="icon-container"><img src="img/padlock-icon.png"></div>
+							<input type="password" placeholder="Password">
+						</div>
+						<div class="checkbox-container">
+							<input id="checkbox3" type="checkbox" value="unchecked">
+							<label for="checkbox3"><span class="text-container">Remember me</span></label>
+							<button class="button" type="submit">Sign In</button>
+						</div>
+					</section>
+				</form>
+			</div>
+			<div class="recover-container">
+				<h2 class="form-header">Recover Form</h2>
+				<form>
+					<section class="recover-form">
+						<div class="input-container">
+							<div class="icon-container"><img src="img/envelope-icon.png"></div>
+							<input type="email" placeholder="Email">
+						</div>
+						<div class="input-container">
+							<div class="icon-container"><img src="img/phone-icon.png"></div>
+							<input type="tel" placeholder="Enter your Phone number">
+						</div>
+						<div class="button-container">
+							<button class="button" type="submit">Send</button>	
+							<button class="button disabled" type="submit" disabled>Done</button>
+						</div>	
+					</section>
+				</form>
+			</div>
+			<div class="subscribe-container">
+				<h2 class="form-header">Subscribe Form</h2>
+				<form>
+					<section class="subscribe-form">
+						<div class="input-container">
+							<div class="icon-container"><img class="envelope-icon" src="img/envelope-icon.png"></div>
+							<input type="email" placeholder="Enter your Email">
+						</div>
+						<div class="button-container">
+							<button class="button" type="submit">Subscribe</button>	
+							<button class="button no" type="submit">No, thanks</button>
+						</div>
+					</section>	
+				</form>
+			</div>
+			<footer>
+				<img class="logo" src="img/logo.png" alt="logo">
+				<img class="website" src="img/website.png" alt="website-name">
+			</footer>
+		</div>
+	</main>
+
+</body>
+</html>
