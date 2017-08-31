@@ -195,7 +195,7 @@ form {
 	margin-bottom: 12px;
 }
 
-.checkbox-container:nth-child(4n) {
+.checkbox-container:nth-child(4) {
 	width: 230px;
 	margin-left: 20px;
 	justify-content: flex-end;
