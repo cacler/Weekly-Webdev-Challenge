@@ -356,7 +356,6 @@ form {
 	background: -moz-linear-gradient(top, #b7df2d 0%, #7fc320 97%); /* FF3.6-15 */
 	background: -webkit-linear-gradient(top, #b7df2d 0%,#7fc320 97%); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(to bottom, #b7df2d 0%,#7fc320 97%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b7df2d', endColorstr='#7fc320',GradientType=0 ); /* IE6-9 */
 	cursor: pointer;
 	text-shadow: 1px 1px 0px #000000;
 }
@@ -366,7 +365,6 @@ form {
 	background: -moz-linear-gradient(top, #7fc320 3%, #b7df2d 100%); /* FF3.6-15 */
 	background: -webkit-linear-gradient(top, #7fc320 3%,#b7df2d 100%); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(to bottom, #7fc320 3%,#b7df2d 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7fc320', endColorstr='#b7df2d',GradientType=0 ); /* IE6-9 */
 }
 
 .sign-in-container .button {
@@ -398,7 +396,6 @@ form {
 	background: -moz-linear-gradient(top, #b7df2d 0%, #7fc320 97%); /* FF3.6-15 */
 	background: -webkit-linear-gradient(top, #b7df2d 0%,#7fc320 97%); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(to bottom, #b7df2d 0%,#7fc320 97%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b7df2d', endColorstr='#7fc320',GradientType=0 ); /* IE6-9 */
 }
 
 .subscribe-form .button {
