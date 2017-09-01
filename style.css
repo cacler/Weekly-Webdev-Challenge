@@ -126,53 +126,31 @@ select:focus {
 	opacity: 0.1;
 }
 
-.register,
-.send-mail,
-.sign-in,
-.recover-form,
-.subscribe-form {
+.form-section {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	width: 380px;
 	background-color: #f4f4f4;
-}
-
-.register {
-	height: 420px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 .register-container {
 	margin-top: 25px;
 }
 
-.send-mail {
-	height: 495px;
-}
-
 .mail-container {
 	margin-top: 35px;
-}
-
-.sign-in {
-	height: 218px;
 }
 
 .sign-in-container {
 	margin-top: 25px;
 }
 
-.recover-form {
-	height: 218px;
-}
-
 .recover-container {
 	margin-top: 25px;
-}
-
-.subscribe-form {
-	height: 158px;
 }
 
 .subscribe-container {
@@ -226,7 +204,7 @@ form {
 }
 
 #checkbox:not(:checked) + label::before,
-#checkbox:checked +label::before {
+#checkbox:checked + label::before {
 	content: "";
 	position: absolute;
 	left: 0; 
@@ -236,6 +214,11 @@ form {
 	border: 1px solid #c6c6c6;
 	background-color: #f4f4f4;
 	border-radius: 4px;
+}
+
+#checkbox:not(:checked):focus + label::before,
+#checkbox:checked:focus + label::before {
+	border: 1px solid #a3d840;
 }
 
 #checkbox:not(:checked) + label::after,
@@ -282,6 +265,11 @@ form {
 	border-radius: 4px;
 }
 
+#checkbox2:not(:checked):focus + label::before,
+#checkbox2:checked:focus + label::before {
+	border: 1px solid #a3d840;
+}
+
 #checkbox2:not(:checked) + label::after,
 #checkbox2:checked + label::after {
 	content: "";
@@ -324,6 +312,11 @@ form {
 	border-radius: 4px;
 }
 
+#checkbox3:not(:checked):focus + label::before,
+#checkbox3:checked:focus + label::before {
+	border: 1px solid #a3d840;
+}
+
 #checkbox3:not(:checked) + label::after,
 #checkbox3:checked + label::after {
 	content: "";
@@ -360,7 +353,8 @@ form {
 	text-shadow: 1px 1px 0px #000000;
 }
 
-.button:hover {
+.button:hover,
+.button:focus {
 	background: #7fc320; /* Old browsers */
 	background: -moz-linear-gradient(top, #7fc320 3%, #b7df2d 100%); /* FF3.6-15 */
 	background: -webkit-linear-gradient(top, #7fc320 3%,#b7df2d 100%); /* Chrome10-25,Safari5.1-6 */
@@ -380,31 +374,31 @@ form {
 	justify-content: space-between;
 }
 
-.recover-form .button {
+.recover-container .button {
 	height: 40px;
 	width: 150px;
 	font-size: 18px;
 }
 
-.recover-form .button.disabled {
+.recover-container .button.disabled {
 	opacity: 0.5;
 	cursor: default;
 }
 
-.recover-form .button.disabled:hover {
+.recover-container .button.disabled:hover {
 	background: #b7df2d; /* Old browsers */
 	background: -moz-linear-gradient(top, #b7df2d 0%, #7fc320 97%); /* FF3.6-15 */
 	background: -webkit-linear-gradient(top, #b7df2d 0%,#7fc320 97%); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(to bottom, #b7df2d 0%,#7fc320 97%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
-.subscribe-form .button {
+.subscribe-container .button {
 	height: 40px;
 	width: 150px;
 	font-size: 18px;
 }
 
-.subscribe-form .button.no {
+.subscribe-container .button.no {
 	background: #f55e6f; /* Old browsers */
 	background: -moz-linear-gradient(top, #f55e6f 0%, #f55e6f 0%, #f03747 100%); /* FF3.6-15 */
 	background: -webkit-linear-gradient(top, #f55e6f 0%,#f55e6f 0%,#f03747 100%); /* Chrome10-25,Safari5.1-6 */
@@ -412,7 +406,8 @@ form {
 	border: 1px solid #a82c37;
 }
 
-.subscribe-form .button.no:hover {
+.subscribe-container .button.no:hover,
+.subscribe-container .button.no:focus {
 	background: #f03747; /* Old browsers */
 	background: -moz-linear-gradient(top, #f03747 0%, #f55e6f 100%, #f55e6f 100%); /* FF3.6-15 */
 	background: -webkit-linear-gradient(top, #f03747 0%,#f55e6f 100%,#f55e6f 100%); /* Chrome10-25,Safari5.1-6 */
@@ -469,11 +464,7 @@ footer .website {
 		width: 100vw;
 	}
 
-	.register,
-	.send-mail,
-	.sign-in,
-	.recover-form,
-	.subscribe-form {
+	.form-section {
 		width: 100%;
 	}
 
@@ -492,11 +483,11 @@ footer .website {
 		width: 90%;
 	}
 
-	.sign-in .checkbox-container {
+	.sign-in-container .checkbox-container {
 		width: 90%;
 	}
 
-	.sign-in .checkbox-container .button {
+	.sign-in-container .checkbox-container .button {
 		width: 35%;
 	}
 
